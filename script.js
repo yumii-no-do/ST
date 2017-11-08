@@ -7,7 +7,6 @@ load();
 scrolling();
 logo();
 
-
 function scrollTop() {
     //возвращяет текущий скролл
     var html = document.documentElement;
@@ -35,6 +34,8 @@ function page(n) {
     }
     container.children[n - 1].classList = "page show";
     if (n == 1) {
+        var logo = document.getElementById("logo").children[0].children[0];
+        logo.style.filter = "invert(1)";
         document.querySelector(".subMenu").id = "hide";
 
     } else {
@@ -47,6 +48,7 @@ function move(event) {
     const ship1 = document.getElementById('ship1');
     const bg = document.getElementById('bg-black');
     const p2_1 = document.getElementById('p2-1');
+    const p2_2 = document.getElementById('p2-2');
     var w = document.body.clientWidth;
     var h = document.body.clientHeight;
     var x = event.clientX;
@@ -54,10 +56,14 @@ function move(event) {
 
     bg.style.width = x / 100 + w / 2 - ((w * 4) / 100) + 'px';
 
-    if (w > 1400) {
+    if (w > 1600) {
         p2_1.style.left = x / 30 + (w / 2) - 500 + 'px';
+        p2_2.style.left = x / 30 + (w / 2) - 1100 + 'px';
+        p2_2.style.top = y / 50 + (h / 2) - 0 + 'px';
     } else {
         p2_1.style.left = x / 30 + (w / 2) - 400 + 'px';
+        p2_2.style.left = x / 30 + (w / 2) - 900 + 'px';
+        p2_2.style.top = y / 50 + (h / 2) -0 + 'px';
     }
 
     console.log(w);
@@ -93,7 +99,7 @@ function scrolling() {
 
 function progress() {
     var top1 = scrollTop();
-    var lastPageH = document.querySelectorAll(".p")[document.querySelectorAll(".p").length-1].clientHeight;
+    var lastPageH = document.querySelectorAll(".p")[document.querySelectorAll(".p").length - 1].clientHeight;
     var maxScroll = 4000;
     var el = document.getElementById("pr");
     var o = top1 / maxScroll;
@@ -104,28 +110,28 @@ function progress() {
 function logo() {
     var scroll = scrollTop();
     var page = document.querySelectorAll(".p");
-    var h=[];
+    var h = [];
     var logo = document.getElementById("logo").children[0].children[0];
-    for(var i =0;i<page.length;i++){
+    for (var i = 0; i < page.length; i++) {
 
-        h[i] = (i === 0)?document.querySelectorAll(".p")[i].clientHeight-75:h[i-1]+document.querySelectorAll(".p")[i].clientHeight-75;
+        h[i] = (i === 0) ? document.querySelectorAll(".p")[i].clientHeight - 75 : h[i - 1] + document.querySelectorAll(".p")[i].clientHeight - 75;
     }
     logo.style.filter = "invert(1)";
-    if(scroll>h[0] && scroll<h[1]){
+    if (scroll > h[0] && scroll < h[1]) {
         logo.style.filter = "invert(0)";
     }
-    if(scroll>h[1] && scroll<h[2]){
-        logo.style.filter = "invert(1)";
-    }
-    if(scroll>h[2] && scroll<h[3]){
+    if (scroll > h[1] && scroll < h[2]) {
         logo.style.filter = "invert(0)";
     }
-    if(scroll>h[3] && scroll<h[4]){
-        logo.style.filter = "invert(1)";
-    }
-    if(scroll>h[4]){
-        logo.style.filter = "invert(0)";
-    }
+    // if (scroll > h[2]) {
+    //     logo.style.filter = "";
+    // }
+    // if (scroll > h[3] && scroll < h[4]) {
+    //     logo.style.filter = "invert(0)";
+    // }
+    // if (scroll > h[4]) {
+    //     logo.style.filter = "invert(0)";
+    // }
     // console.log(scroll,);
 
 }
