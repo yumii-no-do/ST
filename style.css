@@ -564,10 +564,17 @@ menu label {
 
 .logo img {
     position: fixed;
-    top: 20px;
-    right: 30px;
+    top: 15px;
+    right: 20px;
     z-index: 200;
     width: 80px;
+    padding: 10px 15px;
+}
+
+.logo:hover img {
+    background: rgba(255, 255, 255, 0.5);
+
+    border-radius: 28px;
 }
 
 .white img {
@@ -1055,7 +1062,8 @@ img {
     display: flex;
     z-index: 209;
     position: relative;
-    padding: 15px;    padding: 50px;
+    padding: 15px;
+    padding: 50px;
     box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.74);
 }
 
@@ -1111,7 +1119,9 @@ img {
     flex-wrap: wrap;
     margin-left: 80px;
     margin-right: 20px;
-
+    transition: .5s ease-in;
+    transition-property: all;
+    margin-top: 185px;
 }
 
 .p3-cont .s {
@@ -1119,6 +1129,9 @@ img {
     position: relative;
     margin: -60px calc(50% - 175px);
     top: 53px;
+    z-index: 10;
+    transition: .5s ease-in;
+    transition-property: top;
 }
 
 .p3-cont .ship {
@@ -1126,29 +1139,118 @@ img {
     flex-grow: 1;
     margin: 10px;
     max-width: 400px;
-    transition: .5s;
     position: relative;
+    z-index: 3;
+    transition: 1s ease-in;
+    transition-property: all;
 
+}
+
+.p3-cont .texts:hover .textss {
+    opacity: 1;
+    transition: .3s ease-in;
+    transition-property: all;
+}
+
+.p3-cont .texts:hover .tt {
+    margin-bottom: 45px;
+    transition: .3s ease-in;
+    transition-property: all;
+}
+
+.p3-cont .s:hover + .texts > .tt {
+    margin-bottom: 45px;
+    transition: .5s ease-in;
+    transition-property: all;
+}
+
+.p3-cont .texts:hover ~ .s {
+    animation: ship_anim 3s infinite;
+    transition: .5s ease-in;
+    transition-property: all;
+}
+
+.p3-cont .s:hover {
+    animation: ship_anim 3s infinite;
+    transition: .5s ease-in;
+    transition-property: all;
+}
+
+.p3-cont .s:hover + .texts > .textss {
+    opacity: 1;
+    transition: .5s ease-in;
+    transition-property: all;
 }
 
 .p3-cont .texts {
     border: 2px solid #4a4a4a;
     height: 145px;
+    transition: .5s ease-in;
+    transition-property: all;
+    border-radius: 20px;
+    z-index: 100;
 }
 
-.p3-cont .texts > div {
+.p3-cont .texts .tt {
     bottom: 0;
     position: absolute;
     text-align: center;
     width: 99%;
-
+    transition: .3s;
+    transition-property: all;
     margin-bottom: 10px;
     padding: 10px 0;
     font-size: 1.5em;
     font-family: Helvetica, serif;
     color: #4a4a4a;
     background: rgba(255, 255, 255, 0.4);
+    z-index: 2;
 
+}
+
+
+
+
+@keyframes ship_anim {
+    0% {
+        top: 53px;
+        transition: .2s;
+    }
+    50% {
+        top: 40px;
+        transition: .2s;
+    }
+    100% {
+        top: 53px;
+        transition: .2s;
+    }
+}
+
+.p3-cont .textss {
+    height: 145px;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    opacity: 0;
+    border-radius: 17px;
+    transition: .3s;
+    transition-property: all;
+}
+
+.ships-title {
+    text-align: center;
+    background: rgba(180, 81, 214, 0.71);
+    font-family: Helvetica, serif;
+    font-size: 3em;
+    color: #000000;
+    font-weight: 100;
+    padding: 47px;
+    /* margin-bottom: 45px; */
+    position: absolute;
+    transition: .5s;
+    width: 100%;
+    z-index: 2000;
+    top: -185px;
 }
 
 @media screen and (min-width: 1185px) {

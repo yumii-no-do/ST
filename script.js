@@ -6,7 +6,6 @@ window.onscroll = function () {
 
 load();
 scrolling();
-logo();
 setColor();
 
 
@@ -30,7 +29,7 @@ function load() {
 }
 
 function page(n) {
-var  d = n;
+    var d = n;
     var container = document.getElementsByClassName("container")[0];
     for (var i = 0; i < container.children.length; i++) {
         container.children[i].classList = "page"
@@ -38,15 +37,24 @@ var  d = n;
     container.children[n - 1].classList = "page show";
     document.querySelector(".subMenu").id = "hide";
     document.getElementById("pr").style.opacity = "0";
+
     if (d === 1) {
         document.querySelector(".subMenu").id = "hide";
         var logo = document.getElementById("logo").children[0].children[0];
         logo.style.filter = "invert(1)";
     }
-    if(d===2){
-        document.getElementById("pr").style.opacity ="1";
+    if (d === 2) {
+        document.getElementById("pr").style.opacity = "1";
         document.querySelector(".subMenu").id = "sh";
     }
+    if (d === 3) {
+
+        window.onscroll = function () {
+            var logo = document.getElementById("logo").children[0].children[0];
+            logo.style.filter = "invert(0)";
+        }
+    }
+
 }
 
 function move(event) {
@@ -82,7 +90,7 @@ function move(event) {
     } else {
         p2_1.style.left = -x / 30 + (w / 2) - 400 + 'px';
         p2_2.style.left = x / 30 + (w / 2) - 900 + 'px';
-        p2_2.style.top = y / 50 + (h / 2) -0 + 'px';
+        p2_2.style.top = y / 50 + (h / 2) - 0 + 'px';
 
         p23img.style.top = -y / 70 + (h / 2) - 450 + 'px';
         p23img.style.left = -x / 80 + (w / 2) - 600 + 'px';
@@ -94,7 +102,7 @@ function move(event) {
         p252img.style.top = y / 70 + (h / 2) - 400 + 'px';
         p252img.style.left = x / 80 + (w / 2) - 800 + 'px';
     }
-    if(w<1200){
+    if (w < 1200) {
         p2_1.style.left = "";
         p2_2.style.left = "";
         p2_2.style.top = "";
@@ -143,7 +151,7 @@ function progress2() {
     var top1 = scrollTop();
     var lastPageH = document.querySelectorAll(".p")[document.querySelectorAll(".p").length - 1].clientHeight;
     var p3 = document.getElementsByClassName("p3-cont")[0].clientHeight;
-    var maxScroll= 5427;
+    var maxScroll = 5427;
     var el = document.getElementById("pr");
     var o = top1 / maxScroll;
     el.style.width = (o * 100 | 0) + "%";
@@ -163,52 +171,54 @@ function logo() {
     if (scroll > h[0] && scroll < h[1]) {
         logo.style.filter = "invert(0)";
     }
-    if (scroll > h[1]+10 && scroll < h[1]+230) {
+    if (scroll > h[1] + 10 && scroll < h[1] + 230) {
         logo.style.filter = "invert(1)";
     }
-    if (scroll > h[1]+230) {
+    if (scroll > h[1] + 230) {
         logo.style.filter = "invert(0)";
     }
-    if (scroll > h[2]+120 && scroll < h[2]) {
+    if (scroll > h[2] + 120 && scroll < h[2]) {
         logo.style.filter = "invert(0)";
     }
-    if(scroll > h[3] && h[3]+300){
+    if (scroll > h[3] && h[3] + 300) {
         logo.style.filter = "invert(1)";
     }
-    if (scroll > h[3]+400) {
+    if (scroll > h[3] + 400) {
         logo.style.filter = "invert(0)";
     }
-    console.log(scroll,h);
+    // console.log(scroll, h);
 
 }
 
 function randomColor() {
-    function rand(){
+    function rand() {
         var c = Math.random();
-        var q = c*1000000;
+        var q = c * 1000000;
         var d = Math.round(q);
         return d;
     }
+
     var d = rand();
-    if (d<100000){
+    if (d < 100000) {
         d = rand();
     }
 
-    return "#"+d;
+    return "#" + d;
 }
 
 function setColor() {
-    var text = document.querySelectorAll(".texts");
+    var text = document.querySelectorAll(".textss");
     var i = 0;
-    for (i ;i<text.length;i++){
+    for (i; i < text.length; i++) {
         text[i].style.background = randomColor();
     }
-    i=0;
-    for (i ;i<text.length;i++){
-        if(text[i].style.background==""){
+    i = 0;
+    for (i; i < text.length; i++) {
+        if (text[i].style.background == "") {
             text[i].style.background = randomColor();
         }
     }
     // var sh = document.getElementById("h");
     // sh.onmouseover =
 }
+
