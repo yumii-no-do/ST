@@ -421,6 +421,7 @@
 .imgArticle1 #radio:checked + .text > .t {
     opacity: 1;
     animation: f2 1s;
+    padding: 20px;
 }
 
 .imgArticle1 #radio:checked:before {

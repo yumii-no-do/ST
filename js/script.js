@@ -155,7 +155,6 @@ function progress2() {
     var el = document.getElementById("pr");
     var o = top1 / maxScroll;
     el.style.width = (o * 100 | 0) + "%";
-
 }
 
 function logo() {
