@@ -8,7 +8,7 @@
 //     });
 // });
 correctShip();
-setTimeout(correctShip,1000);
+setTimeout(correctShip,2000);
 function  correctShip() {
     var r = document.getElementsByClassName("bg-black")[0].children[1];
     var h = r.clientHeight;
