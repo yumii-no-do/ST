@@ -16,7 +16,7 @@
     color: #ffffff;
     align-items: center;
     font-size: 1.1em;
-    font-family: Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 .menu__item:hover .item_text {
@@ -245,9 +245,9 @@
 
 .title{
     margin-top: 100px;
-    font-size: 6em;
+    font-size: 7em;
     font-weight: 100;
-    font-family: Helvetica,serif;
+    font-family: 'Roboto', sans-serif;
     text-shadow: -4px 4px 0px rgba(0, 0, 0, 0.18);
 }
 .titler{

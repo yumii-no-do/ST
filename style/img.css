@@ -16,7 +16,7 @@
     color: #ffffff;
     align-items: center;
     font-size: 1.1em;
-    font-family: Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 .menu__item:hover .item_text {
@@ -228,7 +228,8 @@
     width: 24vw;
     height: 31vh;
     min-width: 300px;
-    animation: dd 10s;
+    animation: dd 2s;
+    cursor: zoom-in;
 }
 
 .cont:before {
@@ -244,12 +245,37 @@
     border-bottom: 4px solid transparent;
     z-index: 1000;
     visibility: hidden;
-    animation: dwq 3s linear;
+    animation: dwq 1s linear;
 }
 
 .cont > div:nth-of-type(2n) {
-    animation: dd 6s;
+    animation: dd 4s;
 }
+
+#show{
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.83);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    transition: .5s;
+    cursor: zoom-out;
+}
+
+#show img{
+    width: 80%;
+}
+
+#hide{
+    opacity: 0;
+    display: none;
+}
+
 
 @keyframes dwq {
     0% {
@@ -295,7 +321,7 @@ h1 {
     color: #fff;
     font-size: 3em;
     font-weight: 100;
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
     text-align: center;
     padding: 40px 0px;
 }
@@ -314,6 +340,10 @@ h1 {
 }
 
 @media screen and (max-width: 800px) {
+
+    #show img{
+        width: 100%;
+    }
 
     #menu__checkbox {
         display: block;

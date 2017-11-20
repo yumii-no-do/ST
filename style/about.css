@@ -16,7 +16,7 @@
     color: #ffffff;
     align-items: center;
     font-size: 1.1em;
-    font-family: Helvetica, sans-serif;
+    font-family: Roboto, sans-serif;
 }
 
 .menu__item:hover .item_text {
@@ -210,8 +210,8 @@
 .header .top {
     position: absolute;
     font-size: 5em;
-    font-weight: 300;
-    font-family: Helvetica, serif;
+    font-weight: 200;
+    font-family: Roboto, serif;
     margin-top: 50px;
     float: left;
     left: calc(20vw - 100px);
@@ -224,8 +224,8 @@
     right: 25px;
     position: absolute;
     font-size: 2em;
-    font-weight: 300;
-    font-family: Helvetica, serif;
+    font-weight: 200;
+    font-family: Roboto, serif;
     /* margin-top: 50px; */
     /* float: left; */
     /* left: calc(20vw - 100px); */
@@ -250,6 +250,7 @@
     text-align: center;
     position: relative;
     z-index: 100;
+    font-family: 'Vollkorn', serif;
 }
 
 .BigTitle:before {
@@ -257,7 +258,7 @@
     display: inline-block;
     width: 60px;
     height: 63px;
-    top: -5px;
+    top: -2px;
     margin-left: -12px;
     position: absolute;
     background: #50E3C2;
@@ -277,7 +278,7 @@
     max-width: 1050px;
     margin: 0 auto;
     font-size: 1.1em;
-    font-family: Helvetica, serif;
+    font-family: Roboto, serif;
 }
 
 .article1 .img {
@@ -321,8 +322,9 @@
     max-width: 600px;
     margin: 0 auto;
     font-size: 1.3em;
-    font-family: Helvetica, serif;
+    font-family: Roboto, serif;
     line-height: 35px;
+    letter-spacing: 1px;
 }
 
 .imgArticle1 {
@@ -367,7 +369,7 @@
     width: 100%;
     text-align: center;
     margin-top: 20px;
-    font-family: Helvetica, serif;
+    font-family: Roboto, serif;
     font-size: 1.6em;
 }
 
@@ -481,7 +483,7 @@
     line-height: 40px;
     margin: 0 auto;
     font-size: 1.2em;
-    font-family: Helvetica, serif;
+    font-family: Roboto, serif;
     font-weight: 300;
     opacity: 0;
     overflow: hidden;
@@ -611,6 +613,11 @@
 @media screen and (max-width: 530px) {
     .BigTitle {
         font-size: 2.2em;
+
+    }
+    .BigTitle:before {
+
+        top: -8px;
     }
     .header .top {
         left: calc(50vw - 170px);

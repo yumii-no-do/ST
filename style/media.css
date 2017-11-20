@@ -16,7 +16,7 @@
     color: #ffffff;
     align-items: center;
     font-size: 1.1em;
-    font-family: Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 .menu__item:hover .item_text {
@@ -249,7 +249,7 @@ video{
 h1{
     color: #fff;
     font-size: 4em;
-    font-family: sans-serif;
+    font-family:'Roboto', sans-serif;
     font-weight: 100;
     text-align: center;
     padding: 20px 0;
@@ -262,7 +262,7 @@ h1{
 h4{
     color: #fff;
     font-size: 1.7em;
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
     text-align: center;
     font-weight: 100;
     position: absolute;

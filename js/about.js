@@ -10,7 +10,3 @@
 //
 // window.onload = imgArt();
 
-
-function showText() {
-    console.log(this);
-}

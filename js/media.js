@@ -1,6 +1,6 @@
 var d = document.getElementsByClassName("cont")[0];
 
-d.onclick =function (event) {
+d.onclick = function (event) {
     var target = event.target;
     console.log(target);
     play_pause(target);

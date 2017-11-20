@@ -21,7 +21,7 @@ body{
     color: #ffffff;
     align-items: center;
     font-size: 1.1em;
-    font-family: Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 .menu__item:hover .item_text {
@@ -234,7 +234,7 @@ body{
     text-align: center;
     background: #ffffff;
     color: #000;
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 1.2em;
     padding: 15px 0;
     transition: .5s;
@@ -262,7 +262,7 @@ body{
 .header{
     text-align: center;
     font-size: 3em;
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 100;
     background: #000;
     color: #fff;
@@ -316,7 +316,7 @@ body{
 }
 .moreInfText {
     padding: 25px;
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 400;
 }
 .moreInfTitle{
@@ -324,7 +324,7 @@ body{
     font-size: 3em;
     text-align: center;
     margin: 10px 0 20px 0;
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 100;
 }
 .moreInfClose{
@@ -334,7 +334,7 @@ body{
     right: 1px;
     font-size: 3em;
     font-weight: 100;
-    font-family: sans-serif;
+    font-family:'Roboto', sans-serif;
     transform: rotate(45deg);
     cursor: pointer;
 }
