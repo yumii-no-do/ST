@@ -1,4 +1,4 @@
-# ST - сайт посвещен игре Star Citizen
+# ST - сайт посвящен игре Star Citizen
 
 
 
