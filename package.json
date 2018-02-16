@@ -1,0 +1,31 @@
+{
+    "name": "gg",
+    "version": "1.0.0",
+    "dependencies": {
+        "gulp-htmlmin": "^4.0.0",
+        "init": "^0.1.2"
+    },
+    "devDependencies": {
+        "babel-core": "^6.26.0",
+        "babel-preset-env": "^1.6.1",
+        "gulp": "^3.9.1",
+        "gulp-autoprefixer": "^4.1.0",
+        "gulp-babel": "^7.0.1",
+        "gulp-clean-css": "^3.9.2",
+        "gulp-concat": "^2.6.1",
+        "gulp-concat-css": "^3.0.0",
+        "gulp-sass": "^3.1.0",
+        "gulp-scss": "^1.4.0",
+        "gulp-server-livereload": "^1.9.2",
+        "gulp-uglify": "^3.0.0",
+        "gulp-watch": "^5.0.0",
+        "pump": "^3.0.0"
+    },
+    "main": "gulpfile.js",
+    "scripts": {
+        "test": "test"
+    },
+    "author": "",
+    "license": "ISC",
+    "description": ""
+}

@@ -1,0 +1,384 @@
+* {
+    margin: 0;
+    border: 0;
+}
+
+.menu {
+    padding: 0;
+    display: inline-block;
+    position: fixed;
+    margin: calc(50vh - 150px) 0;
+}
+
+.menu__item {
+    display: flex;
+    text-decoration: none;
+    color: #ffffff;
+    align-items: center;
+    font-size: 1.1em;
+    font-family: 'Roboto', sans-serif;
+}
+
+.menu__item:hover .item_text {
+    display: inline;
+}
+
+.menu__item:before {
+    content: "";
+    display: block;
+    background: #000000;
+    width: 10px;
+    height: 31px;
+    margin: 10px 0px 10px 10px;
+    border: 1px solid #ffffff;
+}
+
+.menu .active:before {
+    background: #be0000;
+}
+
+.item_text {
+    animation: item_text .2s linear;
+    display: none;
+    margin: 5px 5px 5px 0px;
+    padding: 5px;
+    background: chartreuse;
+    text-wrap: none;
+    overflow: hidden;
+    height: 21px;
+}
+
+.n1:hover:before {
+    background: #890202;
+}
+
+.n1:hover .item_text {
+    background: #be0000;
+}
+
+.n2:hover:before {
+    background: #47b898;
+}
+
+.n2:hover .item_text {
+    background: #47b898;
+}
+
+.n3:hover:before {
+    background: #3690de;
+}
+
+.n3:hover .item_text {
+    background: #3690de;
+}
+
+.n4:hover:before {
+    background: #b451d6;
+}
+
+.n4:hover .item_text {
+    background: #b451d6;
+}
+
+.n5:hover:before {
+    background: #0f2393;
+}
+
+.n5:hover .item_text {
+    background: #0f2393;
+}
+
+@keyframes item_text {
+    0% {
+        display: inline;
+        width: 0;
+        opacity: 0;
+    }
+    70% {
+        padding-right: 20px;
+        opacity: 1;
+    }
+    100% {
+        width: 50%;
+        padding-right: 5px;
+    }
+}
+
+.menuChek {
+    position: relative;
+    z-index: 1000;
+}
+
+#menu__checkbox {
+    display: none;
+    visibility: hidden;
+    position: fixed;
+    right: 30px;
+    top: 30px;
+    width: 50px;
+    height: 50px;
+    z-index: 1001;
+}
+
+#menu__checkbox+label {
+    display: block;
+    position: fixed;
+    right: 16px;
+    top: 10px;
+    width: 80px;
+    height: 70px;
+    z-index: 1002;
+}
+
+#menu__checkbox:before {
+    position: absolute;
+    content: "";
+    display: block;
+    visibility: visible;
+    background: #000000;
+    width: 50px;
+    height: 7px;
+    top: 0;
+    transition: .5s;
+    border: 1px solid #ffffff;
+    box-shadow: -3px 3px 0px rgba(0, 0, 0, 0.18);
+}
+
+#menu__checkbox:after {
+    position: absolute;
+    content: "";
+    border: 1px solid #ffffff;
+    display: block;
+    visibility: visible;
+    background: #000000;
+    width: 50px;
+    height: 7px;
+    top: 20px;
+    transition: .5s;
+    box-shadow: -3px 3px 0px rgba(0, 0, 0, 0.18);
+}
+
+#menu__checkbox:checked:before {
+    transform: rotate(45deg);
+    top: 10px;
+    transition: .5s;
+}
+
+#menu__checkbox:checked:after {
+    transform: rotate(-45deg);
+    top: 10px;
+    transition: .5s;
+}
+
+@keyframes bac1 {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes bac2 {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+#sity_bg {
+    position: absolute;
+    bottom: 0;
+    z-index: 0;
+    width: 100%;
+    opacity: 0.1;
+}
+
+.logo {
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    z-index: 10;
+    background: url(img/logo.png) center center no-repeat no-repeat;
+    background-size: 100%;
+    filter: invert(100);
+    width: 80px;
+    height: 98px;
+}
+
+.logo img {
+    width: 80px;
+    filter: invert(100);
+}
+
+.bg-black {
+    background: #000;
+    width: 45vw;
+    position: relative;
+    float: right;
+    height: 100vh;
+}
+
+#ship {
+    left: -514px;
+    position: absolute;
+    top: calc(55vh - 250px);
+    animation: moveShip 6s infinite;
+    width: 1079px;
+    z-index: 100;
+}
+
+#ship2 {
+    display: none;
+    left: -514px;
+    margin-left: 100vw;
+    position: absolute;
+    top: calc(55vh - 250px);
+    animation: moveShip 6s infinite;
+    width: 1079px;
+    z-index: 100;
+}
+
+.content {
+    overflow: hidden;
+    height: 100vh;
+}
+
+.title {
+    margin-top: 100px;
+    font-size: 7em;
+    font-weight: 100;
+    font-family: 'Roboto', sans-serif;
+    text-shadow: -4px 4px 0px rgba(0, 0, 0, 0.18);
+}
+
+.titler {
+    width: 55vw;
+    position: absolute;
+    /* float: right; */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+@keyframes moveShip {
+    0% {
+        top: calc(55vh - 250px);
+    }
+    50% {
+        top: calc(45vh - 250px);
+    }
+    100% {
+        top: calc(55vh - 250px);
+    }
+}
+
+@media screen and (max-width: 1260px) {
+    #ship {
+        left: -427px;
+        width: 900px;
+    }
+}
+
+@media screen and (max-width: 1055px) {
+    .title {
+        font-size: 5em;
+    }
+    .titler {
+        width: 50vw;
+    }
+    #ship {
+        left: -381px;
+        width: 800px;
+    }
+    .bg-black {
+        width: 50vw;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .title {
+        font-size: 3em;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .title {
+        margin-bottom: 16vh;
+        font-weight: 300;
+        /*font-size: 3em;*/
+    }
+    #sity_bg {
+        z-index: auto;
+    }
+    .titler {
+        width: 100vw;
+        height: 50vh;
+        align-items: center;
+    }
+    #ship2 {
+        display: block;
+        position: static;
+        /*top: -173px;*/
+        width: 96%;
+        margin: 4%;
+        left: auto;
+        margin-left: 100vw;
+        animation: none;
+        transition: .5s;
+    }
+    .bg-black {
+        width: 100vw;
+        height: 50vh;
+        top: 50vh;
+    }
+    #ship {
+        display: none;
+    }
+    #menu__checkbox {
+        display: block;
+    }
+    .menu {
+        display: none;
+        margin: 0;
+        background: rgba(0, 0, 0, 0.85);
+        width: 100vw;
+        height: 100vmax;
+        z-index: 1000;
+        animation: bac1 .3s linear;
+    }
+    #menu__checkbox:checked~menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 60px;
+    }
+    #menu__checkbox:checked:after {
+        background: #ffffff;
+    }
+    #menu__checkbox:checked:before {
+        background: #ffffff;
+    }
+    .menu__item:before {
+        display: none;
+    }
+    .menu__item {
+        font-size: 2em;
+        font-weight: 100;
+    }
+    .item_text {
+        display: block;
+        animation: none;
+        margin: 20px;
+        background: none;
+        overflow: visible;
+        height: auto;
+        width: 100%;
+    }
+    .logo {
+        display: none;
+    }
+}
