@@ -5,7 +5,7 @@ function correctShip() {
     r.style.marginLeft = "0px";
 
 }
-
+correctShip();
 
 document.addEventListener('DOMContentLoaded', function() {
     correctShip();

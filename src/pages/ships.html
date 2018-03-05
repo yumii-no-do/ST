@@ -19,7 +19,7 @@
         <menu class="menu">
             <a class="menu__item n1 " href="../index.html"><span class="item_text">Главная</span></a>
             <a class="menu__item n2 " href="about.html"><span class="item_text">О игре</span></a>
-            <!-- <a class="menu__item n3 active" href="ships.html"><span class="item_text">Корабли</span></a> -->
+            <a class="menu__item n3 active" href="ships.html"><span class="item_text">Корабли</span></a>
             <a class="menu__item n4" href="media.html"><span class="item_text">Медиа</span></a>
             <!-- <a class="menu__item n5" href="#"><span class="item_text">Другое</span></a> -->
         </menu>
@@ -27,64 +27,9 @@
     <a class="logo" id="logo" href="../index.html">
     </a>
 
-    <!--<div class="filterBody">-->
-    <!--<input type="checkbox" name="" id="checkboxFilter">-->
-    <!--<div class="filter">-->
-    <!--<h4>Фильтр</h4>-->
 
-    <!--<label for="selectSort">Сортировка</label>-->
-    <!--<select name="selectSort" id="selectSort">-->
-    <!--<option value="value1" selected >Имя ></option>-->
-    <!--<option value="value2" >Имя <</option>-->
-    <!--<option value="value3">Популярность</option>-->
-    <!--</select>-->
-
-    <!--<label for="selectSort">Компания</label>-->
-    <!--<select name="selectSort" id="selectCompany">-->
-    <!--<option value="all" selected >Все</option>-->
-    <!--<option value="rsi" >rsi</option>-->
-    <!--<option value="argis">argis</option>-->
-    <!--<option value="anvil">anvil</option>-->
-    <!--<option value="misc">misc</option>-->
-    <!--<option value="origin">origin</option>-->
-    <!--<option value="drake">drake</option>-->
-    <!--</select>-->
-
-    <!--<label for="selectSort">Класс</label>-->
-    <!--<select name="selectSort" disabled id="selectClass">-->
-    <!--<option value="all" selected >Все</option>-->
-    <!--<option value="1" >1</option>-->
-    <!--<option value="2">2</option>-->
-    <!--<option value="3">3</option>-->
-    <!--<option value="4">4</option>-->
-    <!--<option value="5">5</option>-->
-    <!--</select>-->
-
-    <!--<label for="selectSort">Масса</label>-->
-    <!--<select name="selectSort" disabled id="selectMass">-->
-    <!--<option value="all" selected >Все</option>-->
-    <!--<option value="100" >100</option>-->
-    <!--<option value="200" >200</option>-->
-    <!--<option value="300" >300</option>-->
-    <!--<option value="400" >400</option>-->
-    <!--<option value="other" >500 ></option>-->
-    <!--</select>-->
-
-    <!--<label for="selectSort">Экипаж</label>-->
-    <!--<select name="selectSort"  disabled id="selectPeople">-->
-    <!--<option value="all" selected >Все</option>-->
-    <!--<option value="1" >1</option>-->
-    <!--<option value="2">2</option>-->
-    <!--<option value="3">3</option>-->
-    <!--<option value="other">4 ></option>-->
-    <!--</select>-->
-
-    <!--<button type="button" name="fiend" id="fiend" onclick="searchShip(1)">Найти</button>-->
-    <!--</div>-->
-    <!--</div>-->
     <div class="header">Корабли</div>
-    <div class="content">
-    </div>
+    <div id="root"></div>
     <div class="moreInf">
 
     </div>
@@ -92,7 +37,7 @@
     <footer>
 
         <div>
-            <ul>
+            <ul class="footer-link">
                 <li>
                     <a href="../index.html">Главная</a>
                 </li>
@@ -102,12 +47,17 @@
                 <li>
                     <a href="media.html">Медиа</a>
                 </li>
+                <li>
+                    <a href="ships.html">Корабли</a>
+                </li>
             </ul>
         </div>
         <div class="autor">
-            <h1>©</h1> Mefodiev Mikhail Prodaction
+            <h1>©</h1> Mefodiev Mikhail Production
         </div>
     </footer>
+    <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.9.1/firebase-firestore.js"></script>
     <script src="../js/ships.js"></script>
 </body>
 

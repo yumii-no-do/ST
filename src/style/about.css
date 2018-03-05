@@ -215,7 +215,7 @@ footer div a {
 }
 
 .logo {
-    position: fixed;
+    position: absolute;
     right: 20px;
     top: 20px;
     z-index: 10;
@@ -261,6 +261,12 @@ footer div a {
     /* left: calc(20vw - 100px); */
     max-width: 600px;
     z-index: 100;
+}
+
+.footer-link {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .header .bottom small {
@@ -542,6 +548,40 @@ footer div a {
         font-size: 1.3em;
         max-width: 340px;
     }
+    .img1 {
+        background-image: url("../img/img2.jpg");
+        background-size: cover;
+        background-position: center center;
+        background-attachment: fixed;
+    }
+    .img2 {
+        background-image: url("../img/img3.jpg");
+        background-size: cover;
+        background-size: cover;
+        background-position: center center;
+        background-attachment: fixed;
+    }
+    .img3 {
+        background-image: url("../img/img4.jpg");
+        background-size: cover;
+        background-size: cover;
+        background-position: center center;
+        background-attachment: fixed;
+    }
+    .img4 {
+        background-image: url("../img/img5.jpg");
+        background-size: cover;
+        background-size: cover;
+        background-position: center center;
+        background-attachment: fixed;
+    }
+    .img5 {
+        background-image: url("../img/img6.jpg");
+        background-size: cover;
+        background-size: cover;
+        background-position: center center;
+        background-attachment: fixed;
+    }
 }
 
 @media screen and (max-width: 800px) {
@@ -555,6 +595,12 @@ footer div a {
         100% {
             width: 100%;
         }
+    }
+    .header {
+        background-image: url('../img/bg-about-min.jpg');
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center top;
     }
     .article1 .text {
         columns: auto;

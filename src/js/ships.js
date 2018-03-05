@@ -1,308 +1,15 @@
-var data = [{
-        "id": 1,
-        "companyID": 1,
-        "company": "rsi",
-        "class": 1,
-        "mass": 100,
-        "people": 1,
-        "link": "../img/p2-2.png",
-        "name": "Honer",
-        "text": "To the enemy, the Hornet F7C is a weapon never to be underestimated. To allies, it's a savior. The F7C Hornet is the same dependable and resilient multi-purpose fighter that has become the face of the UEE Navy. The F7C is the foundation to build on and meet whatever requirements you have in mind.",
-        "pop": 10
-    },
-    {
-        "id": 2,
-        "companyID": 1,
-        "company": "argis",
-        "class": 2,
-        "mass": 200,
-        "text": "To the enemy, the Hornet F7C is a weapon never to be underestimated. To allies, it's a savior. The F7C Hornet is the same dependable and resilient multi-purpose fighter that has become the face of the UEE Navy. The F7C is the foundation to build on and meet whatever requirements you have in mind.",
-
-        "people": 1,
-        "pop": 9,
-        "link": "../img/p2-2.png",
-        "name": "lololo"
-    },
-    {
-        "id": 3,
-        "companyID": 3,
-        "company": "anvil",
-        "class": 2,
-        "text": "To the enemy, the Hornet F7C is a weapon never to be underestimated. To allies, it's a savior. The F7C Hornet is the same dependable and resilient multi-purpose fighter that has become the face of the UEE Navy. The F7C is the foundation to build on and meet whatever requirements you have in mind.",
-
-        "mass": 200,
-        "pop": 8,
-        "people": 1,
-        "link": "../img/p2-3-2.png",
-        "name": "Hofew3"
-    },
-    {
-        "id": 4,
-        "companyID": 4,
-        "company": "misc",
-        "text": "To the enemy, the Hornet F7C is a weapon never to be underestimated. To allies, it's a savior. The F7C Hornet is the same dependable and resilient multi-purpose fighter that has become the face of the UEE Navy. The F7C is the foundation to build on and meet whatever requirements you have in mind.",
-
-        "class": 3,
-        "pop": 7,
-        "mass": 300,
-        "people": 2,
-        "link": "../img/p2-4-1.png",
-        "name": "waef"
-    },
-    {
-        "id": 5,
-        "companyID": 5,
-        "company": "origin",
-        "class": 4,
-        "pop": 5,
-        "text": "To the enemy, the Hornet F7C is a weapon never to be underestimated. To allies, it's a savior. The F7C Hornet is the same dependable and resilient multi-purpose fighter that has become the face of the UEE Navy. The F7C is the foundation to build on and meet whatever requirements you have in mind.",
-
-        "mass": 400,
-        "people": 2,
-        "link": "../img/p2-4-2.png",
-        "name": "Hereerg"
-    },
-    {
-        "id": 6,
-        "companyID": 6,
-        "company": "drake",
-        "text": "To the enemy, the Hornet F7C is a weapon never to be underestimated. To allies, it's a savior. The F7C Hornet is the same dependable and resilient multi-purpose fighter that has become the face of the UEE Navy. The F7C is the foundation to build on and meet whatever requirements you have in mind.",
-
-        "class": 3,
-        "pop": 4,
-        "mass": 300,
-        "people": 1,
-        "link": "../img/p2-2.png",
-        "name": "ewfwe"
-    },
-    {
-        "id": 7,
-        "companyID": 4,
-        "company": "misc",
-        "class": 2,
-        "pop": 4,
-        "text": "To the enemy, the Hornet F7C is a weapon never to be underestimated. To allies, it's a savior. The F7C Hornet is the same dependable and resilient multi-purpose fighter that has become the face of the UEE Navy. The F7C is the foundation to build on and meet whatever requirements you have in mind.",
-
-        "mass": 200,
-        "people": 1,
-        "link": "../img/p2-2.png",
-        "name": "wefwew"
-    },
-    {
-        "id": 8,
-        "companyID": 5,
-        "company": "origin",
-        "text": "To the enemy, the Hornet F7C is a weapon never to be underestimated. To allies, it's a savior. The F7C Hornet is the same dependable and resilient multi-purpose fighter that has become the face of the UEE Navy. The F7C is the foundation to build on and meet whatever requirements you have in mind.",
-
-        "class": 1,
-        "pop": 3,
-        "mass": 100,
-        "people": 1,
-        "link": "../img/p2-2.png",
-        "name": "awef"
-    },
-    {
-        "id": 9,
-        "companyID": 6,
-        "company": "drake",
-        "text": "To the enemy, the Hornet F7C is a weapon never to be underestimated. To allies, it's a savior. The F7C Hornet is the same dependable and resilient multi-purpose fighter that has become the face of the UEE Navy. The F7C is the foundation to build on and meet whatever requirements you have in mind.",
-
-        "class": 2,
-        "pop": 2,
-        "mass": 200,
-        "people": 2,
-        "link": "../img/p2-2.png",
-        "name": "Hwegrfv"
-    },
-    {
-        "id": 10,
-        "companyID": 6,
-        "company": "anvil",
-        "text": "To the enemy, the Hornet F7C is a weapon never to be underestimated. To allies, it's a savior. The F7C Hornet is the same dependable and resilient multi-purpose fighter that has become the face of the UEE Navy. The F7C is the foundation to build on and meet whatever requirements you have in mind.",
-
-        "class": 2,
-        "pop": 1,
-        "mass": 200,
-        "people": 1,
-        "link": "../img/p2-2.png",
-        "name": "Hwed"
-    },
-    {
-        "id": 11,
-        "companyID": 1,
-        "company": "rsi",
-        "text": "To the enemy, the Hornet F7C is a weapon never to be underestimated. To allies, it's a savior. The F7C Hornet is the same dependable and resilient multi-purpose fighter that has become the face of the UEE Navy. The F7C is the foundation to build on and meet whatever requirements you have in mind.",
-
-        "class": 1,
-        "mass": 100,
-        "people": 1,
-        "link": "../img/p2-2.png",
-        "name": "Honer",
-        "pop": 10
-    },
-    {
-        "id": 12,
-        "companyID": 1,
-        "company": "argis",
-        "text": "To the enemy, the Hornet F7C is a weapon never to be underestimated. To allies, it's a savior. The F7C Hornet is the same dependable and resilient multi-purpose fighter that has become the face of the UEE Navy. The F7C is the foundation to build on and meet whatever requirements you have in mind.",
-
-        "class": 2,
-        "mass": 200,
-        "people": 1,
-        "pop": 9,
-        "link": "../img/p2-2.png",
-        "name": "lololo"
-    },
-    {
-        "id": 13,
-        "companyID": 3,
-        "company": "anvil",
-        "class": 2,
-        "text": "To the enemy, the Hornet F7C is a weapon never to be underestimated. To allies, it's a savior. The F7C Hornet is the same dependable and resilient multi-purpose fighter that has become the face of the UEE Navy. The F7C is the foundation to build on and meet whatever requirements you have in mind.",
-
-        "mass": 200,
-        "pop": 8,
-        "people": 1,
-        "link": "../img/p2-3-2.png",
-        "name": "Hofew3"
-    },
-    {
-        "id": 14,
-        "companyID": 4,
-        "company": "misc",
-        "class": 3,
-        "pop": 7,
-        "text": "To the enemy, the Hornet F7C is a weapon never to be underestimated. To allies, it's a savior. The F7C Hornet is the same dependable and resilient multi-purpose fighter that has become the face of the UEE Navy. The F7C is the foundation to build on and meet whatever requirements you have in mind.",
-
-        "mass": 300,
-        "people": 2,
-        "link": "../img/p2-4-1.png",
-        "name": "waef"
-    },
-    {
-        "id": 15,
-        "companyID": 5,
-        "text": "To the enemy, the Hornet F7C is a weapon never to be underestimated. To allies, it's a savior. The F7C Hornet is the same dependable and resilient multi-purpose fighter that has become the face of the UEE Navy. The F7C is the foundation to build on and meet whatever requirements you have in mind.",
-
-        "company": "origin",
-        "class": 4,
-        "pop": 5,
-        "mass": 400,
-        "people": 2,
-        "link": "../img/p2-4-2.png",
-        "name": "Hereerg"
-    },
-    {
-        "id": 16,
-        "companyID": 6,
-        "company": "drake",
-        "class": 3,
-        "pop": 4,
-        "mass": 300,
-        "people": 1,
-        "text": "To the enemy, the Hornet F7C is a weapon never to be underestimated. To allies, it's a savior. The F7C Hornet is the same dependable and resilient multi-purpose fighter that has become the face of the UEE Navy. The F7C is the foundation to build on and meet whatever requirements you have in mind.",
-
-        "link": "../img/p2-2.png",
-        "name": "ewfwe"
-    },
-    {
-        "id": 17,
-        "companyID": 4,
-        "company": "misc",
-        "class": 2,
-        "pop": 4,
-        "text": "To the enemy, the Hornet F7C is a weapon never to be underestimated. To allies, it's a savior. The F7C Hornet is the same dependable and resilient multi-purpose fighter that has become the face of the UEE Navy. The F7C is the foundation to build on and meet whatever requirements you have in mind.",
-
-        "mass": 200,
-        "people": 1,
-        "link": "../img/p2-2.png",
-        "name": "wefwew"
-    },
-    {
-        "id": 18,
-        "companyID": 5,
-        "company": "origin",
-        "class": 1,
-        "pop": 3,
-        "text": "To the enemy, the Hornet F7C is a weapon never to be underestimated. To allies, it's a savior. The F7C Hornet is the same dependable and resilient multi-purpose fighter that has become the face of the UEE Navy. The F7C is the foundation to build on and meet whatever requirements you have in mind.",
-
-        "mass": 100,
-        "people": 1,
-        "link": "../img/p2-2.png",
-        "name": "awef"
-    },
-    {
-        "id": 19,
-        "companyID": 6,
-        "company": "drake",
-        "class": 2,
-        "pop": 2,
-        "mass": 200,
-        "people": 2,
-        "text": "To the enemy, the Hornet F7C is a weapon never to be underestimated. To allies, it's a savior. The F7C Hornet is the same dependable and resilient multi-purpose fighter that has become the face of the UEE Navy. The F7C is the foundation to build on and meet whatever requirements you have in mind.",
-
-        "link": "../img/p2-2.png",
-        "name": "Hwegrfv"
-    },
-    {
-        "id": 20,
-        "companyID": 6,
-        "company": "anvil",
-        "class": 2,
-        "pop": 1,
-        "text": "To the enemy, the Hornet F7C is a weapon never to be underestimated. To allies, it's a savior. The F7C Hornet is the same dependable and resilient multi-purpose fighter that has become the face of the UEE Navy. The F7C is the foundation to build on and meet whatever requirements you have in mind.",
-
-        "mass": 200,
-        "people": 1,
-        "link": "../img/p2-2.png",
-        "name": "Hwed"
-    }
-
-];
 window.onscroll = function() {
     logo();
 }
-searchShip();
 
-function searchShip(par) {
-
-
-
-    for (var i1 = 0; i1 < data.length; i1++) {
-        add(data[i1].link, data[i1].name, data[i1].id);
+function init() {
+    for (var index = 0; index < 10; index++) {
+        createdMini('', '', '');
     }
-
-
-
 }
+init();
 
 
-function add(linkImg, text, id) {
-    var content = document.getElementsByClassName("content")[0];
-
-    var shipDiv = document.createElement("div");
-    var imgDiv = document.createElement("img");
-    var imgDiv2 = document.createElement("div");
-    var textDiv = document.createElement("div");
-
-    shipDiv.className = "ship";
-    imgDiv.className = "img";
-    textDiv.className = "text";
-
-    imgDiv.setAttribute("src", linkImg);
-
-    shipDiv.setAttribute("data-id", id);
-    shipDiv.setAttribute("onclick", "moreInf(this)");
-
-    shipDiv.appendChild(imgDiv2);
-    shipDiv.appendChild(textDiv);
-    imgDiv2.appendChild(imgDiv);
-    // console.log(shipDiv);
-
-    textDiv.innerText = text;
-
-    content.appendChild(shipDiv);
-}
 
 function scrollTop() {
     //возвращяет текущий скролл
@@ -311,64 +18,6 @@ function scrollTop() {
     var scrollTop = html.scrollTop || body && body.scrollTop || 0;
     scrollTop -= html.clientTop; // в IE7- <html> смещён относительно (0,0)
     return scrollTop;
-}
-
-function moreInf(path) {
-
-    var content = document.getElementsByClassName("moreInf")[0];
-    var bac = document.getElementsByClassName("bac")[0];
-    var shipDiv = document.createElement("div");
-    var imgDiv = document.createElement("img");
-    var imgDiv2 = document.createElement("div");
-    var titleDiv = document.createElement("div");
-    var textDiv = document.createElement("div");
-    var close = document.createElement("div");
-
-    var el = data[path.dataset.id - 1];
-
-    // content.id = "show";
-    bac.id = "show";
-
-    shipDiv.className = "moreInfShip";
-    shipDiv.id = "show";
-    imgDiv.className = "moreInfImg";
-    textDiv.className = "moreInfText";
-    titleDiv.className = "moreInfTitle";
-    close.className = "moreInfClose";
-
-    imgDiv.setAttribute("src", el.link);
-    close.setAttribute("onclick", "moreInfClose()");
-
-    shipDiv.appendChild(imgDiv2);
-    shipDiv.appendChild(titleDiv);
-    shipDiv.appendChild(textDiv);
-    shipDiv.appendChild(close);
-    imgDiv2.appendChild(imgDiv);
-    console.log(shipDiv);
-
-    titleDiv.innerText = el.name;
-    textDiv.innerText = el.text;
-    close.innerText = "+";
-
-    content.appendChild(shipDiv);
-}
-
-function moreInfClose() {
-
-    var content = document.getElementsByClassName("moreInf")[0];
-    var bac = document.getElementsByClassName("bac")[0];
-
-    content.id = "hide";
-    bac.id = "hide";
-
-    content.innerHTML = "";
-}
-
-function find(id) {
-    for (var i = 0; i < data.length; i++) {
-
-        return (data[i].id === id) ? i : undefined;
-    }
 }
 
 function logo() {
@@ -381,4 +30,178 @@ function logo() {
     }
 
 
+}
+// Initialize Firebase
+
+firebase.initializeApp({
+    apiKey: "AIzaSyBKS4omXQ2OX0dd9gL-Bugb6lgJBOZBTLE",
+    authDomain: "ffewf-5ab2a.firebaseapp.com",
+    projectId: "ffewf-5ab2a"
+});
+
+// Initialize Cloud Firestore through Firebase
+var db = firebase.firestore();
+
+db.collection("ships").get().then((querySnapshot) => {
+    document.getElementById('root').innerHTML = '';
+    querySnapshot.forEach((doc) => {
+        createdMini(doc.data().name, doc.data().imgMax, doc.id);
+    });
+});
+
+function createdMini(name, img, id) {
+    var h3 = document.createElement('h3')
+    var imge = document.createElement('div')
+    var contein = document.createElement('div')
+    var root = document.getElementById('root');
+
+    h3.textContent = name;
+    h3.className = 'ship-title'
+
+    imge.style.backgroundImage = 'url(' + img + ')';
+    imge.className = 'ship-img'
+
+    contein.dataset.id = id;
+    contein.className = 'contShip'
+
+    contein.appendChild(imge);
+    contein.appendChild(h3);
+
+    contein.addEventListener('click', createdBig);
+
+    root.appendChild(contein);
+}
+
+function createdBig(e) {
+
+    db.collection("ships").doc(e.currentTarget.dataset.id).get().then((doc) => {
+        var name, primary, crew, length, height, weigth, desc, img, id;
+        name = doc.data().name;
+        primary = doc.data().primary;
+        crew = doc.data().crew;
+        length = doc.data().length;
+        height = doc.data().height;
+        weight = doc.data().weight;
+        desc = doc.data().desc;
+        img = doc.data().imgMax;
+        id = doc.id;
+        console.log(doc.data());
+        cr(name, primary, crew, length, height, weight, desc, img, id)
+    });
+
+
+}
+
+function cr(name, primary, crew, length, height, weight, desc, img, id) {
+
+    var title = document.createElement('h3');
+    var shipWeight = document.createElement('div');
+    var shipDesc = document.createElement('div');
+    var shipImge = document.createElement('div');
+    var shipPrimary = document.createElement('div');
+    var shipCrew = document.createElement('div');
+    var shipLength = document.createElement('div');
+    var shipHeight = document.createElement('div');
+    var contein = document.createElement('div');
+    var props = document.createElement('div');
+    var shadow = document.createElement('div');
+
+    var root = document.getElementById('root');
+
+
+    title.textContent = name;
+    title.className = 'ship-title-big';
+
+    shipPrimary.innerHTML = '<span  class="desc speed-i">Производитель: </span>' + primary;
+    shipPrimary.className = 'ship-primary';
+
+    shipWeight.innerHTML = '<span  class="desc weight-i">Вес: </span>' + weight;
+    shipWeight.className = 'ship-weight-big';
+    shipLength.innerHTML = '<span  class="desc weight-i">Длина: </span>' + length;
+    shipLength.className = 'ship-weight-big';
+    shipHeight.innerHTML = '<span  class="desc weight-i">Высота: </span>' + height;
+    shipHeight.className = 'ship-weight-big';
+    shipCrew.innerHTML = '<span  class="desc weight-i">Пассажиры: </span>' + crew;
+    shipCrew.className = 'ship-weight-big';
+
+
+
+
+    props.className = 'ship-props';
+
+    shipDesc.innerHTML = '<div class="desc desc-i">Описание: </div>' + desc;
+    shipDesc.className = 'ship-desc-big';
+
+    shipImge.style.backgroundImage = 'url(' + img + ')';
+    shipImge.className = 'ship-img-big';
+
+    shadow.className = 'ship-shadow';
+
+    contein.className = 'contShipBig';
+
+    contein.appendChild(shipImge);
+
+    props.appendChild(title);
+    props.appendChild(shipPrimary);
+    props.appendChild(shipWeight);
+    props.appendChild(shipLength);
+    props.appendChild(shipHeight);
+    props.appendChild(shipCrew);
+    props.appendChild(shipDesc);
+
+    contein.appendChild(props);
+
+
+    var end = document.createElement('div');
+    end.appendChild(contein);
+    end.appendChild(shadow);
+    end.className = 'end';
+
+    shadow.addEventListener('click', function() {
+        root.removeChild(end)
+    })
+
+
+    root.appendChild(end);
+}
+
+
+
+function sub(e) {
+    console.log(12)
+    var name = document.getElementById('name').value;
+    var primary = document.getElementById('primary').value;
+    var crew = document.getElementById('crew').value;
+    var length = document.getElementById('length').value;
+    var height = document.getElementById('height').value;
+    var weight = document.getElementById('weight').value;
+    var desc = document.getElementById('desc').value;
+    db.collection("ships").doc(Date.now().toString() + '').set({
+            name: name,
+            primary: primary,
+            crew: crew,
+            length: length,
+            height: height,
+            weight: weight,
+            desc: desc
+        })
+        .then(function() {
+            console.log("Document successfully written!");
+        })
+        .catch(function(error) {
+            console.error("Error writing document: ", error);
+        });
+    document.getElementById('name').value = '';
+    document.getElementById('primary').value = '';
+    document.getElementById('crew').value = '';
+    document.getElementById('length').value = '';
+    document.getElementById('height').value = '';
+    document.getElementById('weight').value = '';
+    document.getElementById('desc').value = '';
+}
+document.onkeypress = (e) => {
+    console.log(e);
+    if (e.key === 'Enter') {
+        sub();
+    }
 }

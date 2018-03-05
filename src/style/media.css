@@ -130,6 +130,12 @@
     z-index: 1002;
 }
 
+.footer-link {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
 #menu__checkbox:before {
     position: absolute;
     content: "";
@@ -189,7 +195,7 @@
 }
 
 .logo {
-    position: fixed;
+    position: absolute;
     right: 20px;
     top: 20px;
     z-index: 10;

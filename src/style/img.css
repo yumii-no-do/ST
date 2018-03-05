@@ -53,7 +53,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     background: #b451d6;
-    padding: 35px;
+    padding: 0 35px;
     color: #fff;
     font-family: Helvetica;
 }
@@ -215,7 +215,7 @@ footer div a {
 }
 
 .logo {
-    position: fixed;
+    position: absolute;
     right: 20px;
     top: 20px;
     z-index: 10;
@@ -232,7 +232,7 @@ footer div a {
 }
 
 .logo {
-    position: fixed;
+    position: absolute;
     right: 20px;
     top: 20px;
     z-index: 10;
@@ -260,6 +260,12 @@ footer div a {
     min-width: 300px;
     animation: dd 2s;
     cursor: zoom-in;
+}
+
+.footer-link {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .cont:before {

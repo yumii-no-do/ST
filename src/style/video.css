@@ -58,7 +58,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     background: #b451d6;
-    padding: 35px;
+    padding: 0 35px;
     color: #fff;
     font-family: Helvetica;
 }
@@ -195,6 +195,12 @@ footer div a {
     transition: .5s;
 }
 
+.footer-link {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
 #menu__checkbox:checked:after {
     transform: rotate(-45deg);
     top: 10px;
@@ -220,7 +226,7 @@ footer div a {
 }
 
 .logo {
-    position: fixed;
+    position: absolute;
     right: 20px;
     top: 20px;
     z-index: 10;
